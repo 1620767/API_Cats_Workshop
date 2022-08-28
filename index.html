@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <header>
+        <h1>API Cats Workshop</h1>
+        <p>API Consumption demo with JS</p>
+    </header>
+
+    <main>
+        <div class="container-title">
+            <h2>Random images</h2>
+            <hr>
+        </div>
+        
+        <section id="images_random">
+            <button class="primary_button">Get new images</button>
+            <div class="container_images_random">
+                <article class="container_images">
+                    <picture>
+                        <img id="img1" class="image_cat_random" alt="Foto de un gato">
+                        <button id="btn1" class="icon_add"><img src="./assets/img/favorite_add.png" alt=""></button>
+                    </picture>
+                </article>
+    
+                <article class="container_images">
+                    <picture>
+                        <img id="img2" class="image_cat_random" alt="Foto de un gato">
+                        <button id="btn2" class="icon_add"><img src="./assets/img/favorite_add.png" alt=""></button>
+                    </picture>
+                </article>
+    
+                <article class="container_images">
+                    <picture>
+                        <img id="img3" class="image_cat_random" alt="Foto de un gato">
+                        <button id="btn3" class="icon_add"><img src="./assets/img/favorite_add.png" alt=""></button>
+                    </picture>
+                </article>
+            </div>
+            
+        </section>
+
+        <div class="container-title">
+            <h2>Favorite images</h2>
+            <hr>
+        </div>
+
+        <section id="favorites_images">
+            <div class="container_favorites_images">
+                <!-- <article class="container_favorites">
+                    <picture>
+                        <img id="img4" style="width: 300px; height: 300px;" alt="Foto de un gato">
+                        <button class="icon_remove"><img src="./assets/img/remove.png" alt=""></button>
+                    </picture>
+                </article> -->
+            </div>
+        </section>
+        
+        <div class="container-title">
+            <h2>Upload your cat  a photo</h2>
+            <hr>
+        </div>
+
+        <section id="form_container">
+            <form id="form_uploading" action="">
+                <input id="file" type="file" name="file">                             
+            </form>
+            <button class="button_upload">Load file</button>  
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <hr>
+            <h3>By Luis Puse Montalvo </h3>
+            <p>All rights reserved © 2022 </p>
+        </div>      
+    </footer>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

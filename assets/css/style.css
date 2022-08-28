@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #080F28;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #141a32;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+.container-title {
+    color: aliceblue;
+    margin: 0 40px;
+}
+
+#images_random,
+#favorites_images,
+#form_container {
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container_images_random,
+.container_favorites_images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container_images,
+.container_favorites {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.container_images picture,
+.container_favorites picture {
+    position: relative;
+    margin: 10px;
+}
+
+.container_images button,
+.container_favorites button{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container_images .icon_add img{
+    height: 60px;
+    width: 60px;
+}
+
+.image_cat_favorite,
+.image_cat_random {
+    width: 300px;
+    height: 300px;
+}
+.container_favorites .icon_remove img {
+    height: 40px;
+    width: 40px;
+}
+
+.primary_button {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #33b1ff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #080F28;
+}
+
+#form_uploading {
+    color: white;
+}
+
+#form_uploading input::file-selector-button {
+    background-color: #8FE3CF;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    color: #080F28;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.button_upload {
+    background-color: #33b1ff;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    color: #080F28;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold; 
+}
+
+.footer-container {
+    display: grid;
+    width: 100vw;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: x-small;
+}
